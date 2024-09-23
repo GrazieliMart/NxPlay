@@ -1204,7 +1204,39 @@ nav a {
 }
 #logo {
   margin-right: 10px;
-  max-height: 70px;
+  max-height: 40px;
+}
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #000;
+  z-index: 1000;
+  backdrop-filter: blur(50px);
+}
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffa904;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+.scroll-to-top img {
+  width: 40px;
+  height: auto;
+  margin-top: 20px;
 }
 .movie-card .card {
   margin-left: 0px;
