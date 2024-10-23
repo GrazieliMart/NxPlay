@@ -91,7 +91,7 @@ header {
 
 #logo {
   margin-right: 100px;
-    max-height: 70px;
+    max-height: 40px;
 
 }
 #logo img{
@@ -343,7 +343,7 @@ nav i:hover{
 }
 .video-container {
   background-color: #1c1c1b;
-  WIDTH: 1300PX;
+  WIDTH: 1500PX;
   margin-top: -70px;
   border-radius: 20px;
   box-shadow: rgba(255, 167, 4, 0) 0px 0px 100px;
@@ -598,40 +598,41 @@ padding-top: 100px;
   .plan-container {
     display: flex;
     justify-content:center;
-    margin: 50px;
+    margin: 0px;
   }
   
   .plan {
    margin-left: 50px;
    margin-right: 50px;
+   height: auto;
     padding: 20px;
     border-radius: 5px;
-    width: 25%;
-    background-color: #010101;
+    width:300px;
+    background-color: #ffffff;
     text-align: left  ;
     border:1px solid rgba(197, 197, 197, 0.459);
     transition: transform 0.3s ease;
 }
   #recomendado{ box-shadow: 0 4px 20px rgb(172 168 168 / 10%);
-    border: 4px solid #ffa904;
+    border: 4px solid #2d9cff;
   }
   .text-overlay {
     margin-left: 30px;
     text-align: left;
 }
-  .corner-rectangle {
-    position: relative;
-    top: 10px;
-    padding: 0px 20px 0px 20px;
-    right: -217px;
-    width: 160px;
-    font-weight: 900;
-    line-height: 40px;
-    height: 40px;
-    color: #000;
-    background-color: #65cf08;
-    transition: 0.2s;  
-    border-radius: 20px;
+.corner-rectangle {
+  position: relative;
+  top: 10px;
+  padding: 0px 20px 0px 20px;
+  right: -217px;
+  width: 160px;
+  font-weight: 900;
+  line-height: 40px;
+  height: 40px;
+  color: #1e2547;
+  background-color: #20d7ff;
+  transition: 0.2s;
+  border-radius: 20px;
 }
 .corner-rectangle:hover{
   transform: scale(1.1);
@@ -654,7 +655,7 @@ padding-top: 100px;
     font-weight: 100;
   }
   .plan p{
-    color: #ffffff;
+    color: #413f3f;
   }
  
   
@@ -667,7 +668,7 @@ padding-top: 100px;
 .price {
   color: #fff;
   margin-top: -25px;
-  font-size: 65px;
+  font-size: 55px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -691,7 +692,10 @@ padding-top: 100px;
     font-size: 16px;
     margin-top: 20px;
   }
-  
+  .align-plans{
+    pad: 50px;
+    display: flex;
+  }
   .buy-button:hover {
     background-color: #45a049;
   }
@@ -745,6 +749,24 @@ padding-top: 100px;
       
       .cssbuttons-io-button:hover .icon {
         width: calc(100% - 0.6em);
+      }
+      .plano-btn{
+        background-color: #085399;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        padding: 20px;
+        border:2px solid #085399;
+        transition: 0.2s;
+      }
+      .plano-btn:hover{
+        background-color: #00000000;
+        border:2px solid #5890c4;
+        cursor: pointer;
+        transition: 0.2s;
+        color: #0a499c;
       }
       
       .cssbuttons-io-button .icon svg {
@@ -819,7 +841,7 @@ padding-top: 100px;
       width: 1.5rem;
       flex-shrink: 0;
       margin-right: 0.5rem;
-      color: #ffffff;
+      color: #00d346;
   }
       
     .movie-card .action {
@@ -1228,6 +1250,13 @@ padding-top: 100px;
   color: white;
   background-color: rgb(0 0 0 / 0%);
   z-index: 1;
+}.bandeiras{
+
+  font-size: 20px;
+}
+.bandeiras img{
+  margin-top: -120px;
+  height: 500px;
 }
 @media screen and (max-width: 900px){
   .video-container {
@@ -1237,6 +1266,13 @@ padding-top: 100px;
     box-shadow: rgb(171 170 166 / 35%) 0px 0px 50px;
     margin-top: 10px;
     margin-right: -20px;
+}
+.align-plans {
+  pad: 50px;
+  display: grid;
+}
+.bandeiras{
+  font-size: 15px;
 }
 .overlay-content {
   display: none;

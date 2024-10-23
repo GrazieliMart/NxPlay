@@ -122,6 +122,31 @@
         .titulo span{
           color:rgba(255, 169, 4, 1);
         }
+        .plan-container {
+    display: grid;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.plan-container .content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Cor do texto para ser visível sobre o vídeo */
+}
+
     </style>
 </head>
 
@@ -143,7 +168,7 @@
                 <i class="bi bi-instagram"></i>
             </a>
            
-            <a class="btn" href="#planos">CONHECER PLANOS</a>
+            <a class="btn" href="#planos1">CONHECER PLANOS</a>
         </div>
     </nav>
 </header>
@@ -161,69 +186,11 @@
                   </div>
                   <!-- Div que ficará acima do vídeo -->
                   <div class="overlay-content">
-                              <div class="plan-container" id="planos">
+                              <div class="plan-container" >
                         
                        
-                        
-                        <div class="plan" id="video-plan">
-                        <div class="corner-rectangle" id="corner-rectangle"> 20% de desconto </div>
-                    
-                        <h2>PLANO PREMIUM</h2> 
-                        <s>R$ 29,99</s>
-                        <p class="price" id="video-plans">R$ 19,99 <b>/ mês</b></p>
-                       
-                        <button class="cssbuttons-io-button" style="margin-top: 0px;">
-                      Escolher Plano
-                      <div class="icon">
-                        <svg
-                          height="24"
-                          width="24"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M0 0h24v24H0z" fill="none"></path>
-                          <path
-                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      </button>
-                       
-                    
-                    
+                   
                       
-                      </div>
-                     
-                      <div class="plan" id="recomendado">
-
-                        <div class="corner-rectangle" id="corner-rectangle"> 34% de desconto </div>
-                    
-                        <h2>PLANO PLUS</h2> 
-                        <s>R$ 14,99</s>
-                        <p class="price" id="video-plans">R$ 9,90 <b>/ mês</b></p>
-                     
-                        
-                              
-                        <button class="cssbuttons-io-button"  style="margin-top: 0px;">
-                      Escolher Plano
-                      <div class="icon">
-                        <svg
-                          height="24"
-                          width="24"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M0 0h24v24H0z" fill="none"></path>
-                          <path
-                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      </button>
-                    
-                      </div>
 
                     </div>
                   </div>
@@ -282,7 +249,7 @@
           <a href=""><img src="assets/google-play.png" alt="https://play.google.com/store/apps/details?id=com.tnn.nxplay.nxtv"></a>
          <a href="https://apps.apple.com/br/app/nx-play/id1482401491"> <img src="app-store.png" alt=""></a></div>
 			<br>
-				<a href="#planos">	<button type="button" class="action">CONHECER PLANOS</button></a>
+				<a href="#planos1">	<button type="button" class="action">CONHECER PLANOS</button></a>
 				</div>
                 <div class="text-container">
         <!-- Conteúdo da div à direita -->
@@ -388,19 +355,35 @@
         <!-- Adicione mais imagens conforme necessário -->
     </div>
     <div class="degrade-lateral" ></div>
-    <h1 style="font-size:35px;">Gostou? Cadastre-se e aproveite o melhor da NX!</h1>
+    
+      </div>
+    <div class="plan-container" id="planos1">
+        
+      <video autoplay muted loop class="background-video">
+        <source src="assets/video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+      </video>
+      <div>
+      <h1 style="font-size:35px;">Gostou? Cadastre-se e aproveite o melhor da NX!</h1>
     <p style="font-size:25px;">E tenha acesso ao melhor conteúdo legalizado e de qualidade <br><b style="color:#ffa904;">PELO MELHOR PREÇO!</b></p>
-    </div>
-    <div class="plan-container" >
+  </div>
+  <br>
+  <br>
+      <div class="align-plans" >
     <div class="plan" >
-    <div class="corner-rectangle"> 20% de desconto </div>
+    
 
-    <h2>PLANO PREMIUM</h2> 
-    <s>R$ 29,99</s>
-    <p class="price">R$ 11,99 <b>/ mês</b></p>
+    <h2>1 mês</h2> 
+   <br><br><br>
+    <p class="price">R$ 14,99 <b>/ mês</b></p>
     <hr>
    
-   <br>
+   <br>   
+   
+   <button class="plano-btn" style="font-size:25px;">
+  Escolher Plano
+ 
+  </button>
     <ul class="lists">
 						<li class="list">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -420,135 +403,114 @@
 							</svg>
 							<span>Alta Qualidade</span>
 						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Cadastro de até 5 perfis</span>
-						</li>
+        
             <li class="list">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
 							</svg>
 							<span>Até 3 telas simultâneas</span>
 						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>+4.200 horas de Filmes e Episódios de Séries</span>
-						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>40 Canais de TV ao vivo</span>
-						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Pagamento com cartão de crédito</span>
-						</li>
+       
 					</ul>
-    <button class="cssbuttons-io-button" style="font-size:25px;">
-  Escolher Plano
-  <div class="icon">
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-  </button>
+ 
   
   </div>
-
   <div class="plan" id="recomendado">
     <div class="corner-rectangle"> 34% de desconto </div>
 
-    <h2>PLANO PLUS</h2> 
+    <h2>12 MESES</h2> 
     <s>R$ 14,99</s>
     <p class="price">R$ 9,90 <b>/ mês</b></p>
+    <hr>
+   
+   <br>
+  
+   <button class="plano-btn" style="font-size:25px;">
+    Escolher Plano
+   
+    </button>
+      <ul class="lists">
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Filmes e séries!</span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Legalizado</span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Alta Qualidade</span>
+              </li>
+          
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Até 3 telas simultâneas</span>
+              </li>
+         
+            </ul>
+    <img src="assets/estrelas.png" alt="">
+          
+  
+  </div>
+  <div class="plan" >
+    
+    <h2>3 MESES</h2> 
+    <s>R$ 14,99</s>
+    <p class="price">R$ 11,90 <b>/ mês</b></p>
    <hr>
    <br>
-    <ul class="lists">
-						<li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Filmes e séries!</span>
-						</li>
-						<li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Legalizado</span>
-						</li>
-						<li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Alta Qualidade</span>
-						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Cadastro de até 5 perfis</span>
-						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Até 3 telas simultâneas</span>
-						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>+4.200 horas de Filmes e Episódios de Séries</span>
-						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>40 Canais de TV ao vivo</span>
-						</li>
-            <li class="list">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-							</svg>
-							<span>Pagamento com cartão de crédito</span>
-						</li>
-					</ul>
-          <img src="assets/estrelas.png" alt="">
-    <button class="cssbuttons-io-button" style="font-size:25px;">
-  Escolher Plano
-  <div class="icon">
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </div>
-  </button>
+   <button class="plano-btn" style="font-size:25px;">
+    Escolher Plano
+   
+    </button>
+      <ul class="lists">
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Filmes e séries!</span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Legalizado</span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Alta Qualidade</span>
+              </li>
+          
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Até 3 telas simultâneas</span>
+              </li>
+         
+            </ul>
+      
+ 
 
-  </div>
+  </div></div>
+  <div class="bandeiras">
+    <br>
+    <br>
+    <p style="color: #979797; margin-bottom: -20px;">*Necessário pagamento antecipado. Economia baseada comparada ao preço do plano mensal durante 12 meses. Termos se aplicam.</p>
+ <h1 >Aceitamos as principais bandeiras. Pagamento 100% seguro.</h1>
+<img src="assets/bandeiras.png" alt="">
+</div>
 </div>
 
 
